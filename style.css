@@ -54,3 +54,30 @@ p {
     background-size: cover;
     background-position: center;
 }
+.about-me {
+   padding: 5px;
+   margin: 10px;
+}
+
+.work {
+    padding: 5px;
+    margin: 10px;
+}
+
+.contact-me {
+    padding: 5px;
+    margin: 10px;
+}
+
+.avatar {
+    position: absolute;
+    top: 100px;
+    display: inline-block;
+    margin-left: 930px;
+    margin-right: 0px;
+    width: 290px;
+    height: 290px;
+    align-self: center;
+    
+
+}
