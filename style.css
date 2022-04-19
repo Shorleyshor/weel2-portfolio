@@ -54,19 +54,35 @@ p {
     background-size: cover;
     background-position: center;
 }
+.about-me-container {
+display: flex;
+padding: 15px;
+
+}
+
 .about-me {
-   padding: 5px;
-   margin: 10px;
+  width: 30%;
+  border-right: 3px solid red;
+
+}
+.about-me2 {
+    width: 70%;
 }
 
-.work {
-    padding: 5px;
-    margin: 10px;
-}
 
+
+.contact-me-container {
+    display: flex;
+    padding: 15px;
+   
+}
 .contact-me {
-    padding: 5px;
-    margin: 10px;
+width: 30%;
+border-right: 3px solid red;
+
+}
+.contact-me2 {
+width: 70%;
 }
 
 .avatar {
@@ -78,6 +94,30 @@ p {
     width: 290px;
     height: 290px;
     align-self: center;
-    
+}
 
+.work-container {
+    display: flex;
+    padding: 15px;
+    
+    
+}
+.work-me {
+    width: 30%;
+    border-right: 3px solid red;
+}
+.placeholder-1 {
+position: relative;
+width: 1000px;
+height: 300px;
+}
+.placeholder-2 {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+.placeholder-3 {
+    position: relative;
+    width: 500px;
+    height: 300px; 
 }
