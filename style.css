@@ -5,10 +5,9 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #2a607c;
 }
 
-/* removed 3 f's from color */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,6 +17,7 @@ body {
 
 .header h1 {
     display: inline-block;
+    flex-wrap: wrap;
     font-size: 48px;
 }
 
@@ -31,6 +31,7 @@ body {
 
 .header div ul {
     list-style-type: none;
+    padding: 3px;
 }
 
 .header div ul li {
@@ -46,78 +47,108 @@ a {
 p {
     font-size: 16px;
 }
-
+.image-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
 .code-image  {
+    display: flex;
+    position: absolute;
     height: 300px;
     width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
+}
+.avatar {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 300px;
 }
 .about-me-container {
 display: flex;
-padding: 15px;
+padding: 10px;
 
 }
 
 .about-me {
-  width: 30%;
-  border-right: 3px solid red;
+  width: 20%;
+  border-right: 4px solid purple;
+  margin-right: 4px;
 
 }
 .about-me2 {
-    width: 70%;
+    width: 80%;
 }
 
 
 
 .contact-me-container {
     display: flex;
-    padding: 15px;
-   
+    padding: 10px;
+   width: 100%;
 }
 .contact-me {
-width: 30%;
-border-right: 3px solid red;
+width: 20%;
+border-right: 4px solid purple;
+margin-right: 4px;
 
 }
-.contact-me2 {
-width: 70%;
+.contact-text {
+    width: 80%;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.email {
+color: black;
+}
+.github {
+    color: black;
+}
+.phone {
+    color: black;
 }
 
-.avatar {
-    position: absolute;
-    top: 100px;
-    display: inline-block;
-    margin-left: 930px;
-    margin-right: 0px;
-    width: 290px;
-    height: 290px;
-    align-self: center;
-}
 
 .work-container {
     display: flex;
-    padding: 15px;
+    padding: 10px;
+    width: 100%;
     
     
 }
 .work-me {
-    width: 30%;
-    border-right: 3px solid red;
+    width: 20%;
+    border-right: 4px solid purple;
+    margin-right: 4px;
 }
-.placeholder-1 {
+.work-me2 {
+    width: 80%;
+}
+.first-project {
 position: relative;
-width: 1000px;
+width: 100%;
 height: 300px;
 }
-.placeholder-2 {
+.second-project {
     position: relative;
-    width: 500px;
+    width: 49%;
     height: 300px;
+    padding: 5px;
 }
-.placeholder-3 {
+.third-project {
     position: relative;
-    width: 500px;
+    width: 49%;
     height: 300px; 
+    padding: 5px;
+}
+@media screen and (max-width: 550px) {
+    .work-container, .contact-me-container, .background-picture, .about-me-container, header h1, header div ul{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    .body {
+        background-color: #2a7c4e;
+    }
 }
